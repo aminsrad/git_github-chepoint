@@ -16,7 +16,7 @@ const Updateactualite = () => {
   return (
     <div>
       <AdminNav />
-      <h1>Updateactualite</h1>
+      <h1>Update actualite</h1>
 
       <div style={{ display: "flex" }}>
         <SideBar style={{ width: "10%", borderStyle: "solid" }} />

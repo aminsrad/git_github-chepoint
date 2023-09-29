@@ -15,7 +15,7 @@ const Uplateproduct = () => {
   return (
     <div>
       <AdminNav />
-      <h1> Uplateproduct</h1>
+      <h1> Update product</h1>
 
       <div style={{ display: "flex" }}>
         <SideBar style={{ width: "10%", borderStyle: "solid" }} />

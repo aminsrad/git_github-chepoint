@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 import { updateProducts } from "../redux/actions/products";
 
-const EditModalProd = (el) => {
+const EditModalProd = ({ el }) => {
   const [modal, setModal] = useState(false);
   ///** */
   const [imageData, setImageData] = useState({
@@ -73,11 +73,11 @@ const EditModalProd = (el) => {
       imageData.originalName
     );
 
-    dispatch(updateProducts(formData));
+    dispatch(updateProducts(el._id, formData));
     console.log("this is the formdata:");
     console.log(formData);
     clearForm();
-    alert("Product ajouter");
+    alert("Product mis jour");
   };
   //** */
 
@@ -88,7 +88,7 @@ const EditModalProd = (el) => {
   return (
     <div>
       <Button color="danger" onClick={toggle}>
-        edit actualite
+        edit produits
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>edit Product</ModalHeader>

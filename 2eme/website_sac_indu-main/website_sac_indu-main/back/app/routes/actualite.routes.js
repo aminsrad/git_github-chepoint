@@ -69,9 +69,6 @@ module.exports = (app) => {
   // Retrieve all actualites
   router.get("/", actualites.findAll);
 
-  // Retrieve all published actualites
-  router.get("/published", actualites.findAllPublished);
-
   //get the last modified actualite
   router.get("/lastactu", actualites.findlastactualite);
 
