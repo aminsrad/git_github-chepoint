@@ -21,7 +21,7 @@ const ManageUser = () => {
   return (
     <div>
       <AdminNav />
-      <h1>Updateactualite</h1>
+      <h1>User list</h1>
 
       <div style={{ display: "flex" }}>
         <SideBar style={{ width: "10%", borderStyle: "solid" }} />

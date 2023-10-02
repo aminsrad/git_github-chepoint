@@ -15,6 +15,14 @@ export const addUser = (newUser) => (dispatch) => {
     .then((res) => dispatch({ type: CREATE_USER, payload: res.data }))
     .catch((err) => console.log(err));
 };
+///update user password
+
+export const updateUser = (iduser, updateduser) => (dispatch) => {
+  axios
+    .put(`http://localhost:5000/api/users/${iduser}`, updateduser)
+    .then((res) => dispatch(getUsers()))
+    .catch((err) => console.log(err));
+};
 //delete user
 export const deleteUser = (iduser) => (dispatch) => {
   axios

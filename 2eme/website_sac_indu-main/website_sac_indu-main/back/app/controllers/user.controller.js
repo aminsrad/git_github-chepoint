@@ -1,4 +1,5 @@
 const db = require("../models");
+const bcrypt = require("bcrypt");
 const User = db.users;
 
 // Create and Save a new user
@@ -47,7 +48,7 @@ exports.findAll = (req, res) => {
     });
 };
 
-// Update a actualite by the id in the request
+// Update a user password by the id in the request
 exports.update = async (req, res) => {
   const id = req.params.id;
   if (!req.body) {
@@ -55,7 +56,13 @@ exports.update = async (req, res) => {
       message: "Data to update can not be empty!",
     });
   }
-  User.findByIdAndUpdate(id, update, { new: true })
+  const hashedPassword = await bcrypt.hash(req.body.password, 10);
+  const update = {
+    $set: {
+      password: hashedPassword,
+    },
+  };
+  User.findByIdAndUpdate(id, update)
     .then((data) => {
       if (!data) {
         res.status(404).send({

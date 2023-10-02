@@ -90,7 +90,7 @@ const EditModalProd = ({ el }) => {
       <Button color="danger" onClick={toggle}>
         edit produits
       </Button>
-      <Modal isOpen={modal} toggle={toggle}>
+      <Modal isOpen={modal} toggle={toggle} style={{ paddingTop: "90px" }}>
         <ModalHeader toggle={toggle}>edit Product</ModalHeader>
         <ModalBody>
           <Form>

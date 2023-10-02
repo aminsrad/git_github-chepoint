@@ -1,4 +1,4 @@
-import { GET_USER, CREATE_USER } from "../actions/types";
+import { GET_USER, CREATE_USER, UPDATE_USER } from "../actions/types";
 
 const initialState = {
   users: [],
@@ -12,6 +12,11 @@ const userReducer = (state = initialState, action) => {
         users: action.payload,
       };
     case CREATE_USER:
+      return {
+        ...state,
+        users: [...state.users, action.payload],
+      };
+    case UPDATE_USER:
       return {
         ...state,
         users: [...state.users, action.payload],

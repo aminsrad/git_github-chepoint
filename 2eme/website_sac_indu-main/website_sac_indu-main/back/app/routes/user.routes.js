@@ -9,6 +9,8 @@ module.exports = (app) => {
   router.get("/", users.findAll);
   // delete a new user
   router.delete("/:id", users.delete);
+  // update user password
+  router.put("/:id", users.update);
 
   app.use("/api/users", router);
 };

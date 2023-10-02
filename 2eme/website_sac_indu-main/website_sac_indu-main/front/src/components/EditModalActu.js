@@ -93,7 +93,7 @@ const EditModalActu = ({ el }) => {
       <Button color="danger" onClick={toggle}>
         edit actualite
       </Button>
-      <Modal isOpen={modal} toggle={toggle}>
+      <Modal isOpen={modal} toggle={toggle} style={{ paddingTop: "90px" }}>
         <ModalHeader toggle={toggle}>edit Actualite</ModalHeader>
         <ModalBody>
           <Form>

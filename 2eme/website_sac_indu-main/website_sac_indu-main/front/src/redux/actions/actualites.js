@@ -33,14 +33,3 @@ export const updateActualites =
       .then((res) => dispatch(getActualites()))
       .catch((err) => console.log(err));
   };
-///update actualite
-// export const updateActualites =
-//   (idactualite, updatedactualite) => (dispatch) => {
-//     axios
-//       .put(
-//         `http://localhost:5000/api/actualites/${idactualite}`,
-//         updatedactualite
-//       )
-//       .then((res) => dispatch(getActualites()))
-//       .catch((err) => console.log(err));
-//   };
