@@ -161,21 +161,6 @@ exports.deleteAll = (req, res) => {
     });
 };
 
-// Find all published actualites
-exports.findAllPublished = async (req, res) => {
-  await Actualite.find({ published: true })
-    .then((data) => {
-      console.log("Rdata:", data); // Add this line to log the retrieved data
-
-      res.send(data);
-    })
-    .catch((err) => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving actualites.",
-      });
-    });
-};
 // Find last modified actualites
 exports.findlastactualite = async (req, res) => {
   await Actualite.find()

@@ -15,7 +15,6 @@ const UsersCard = (el) => {
   return (
     <div>
       <p>{el.username}</p>
-      <button onClick={deleteuser}>delete</button>
       <ModalFooter>
         <Button color="secondary" onClick={deleteuser}>
           delete

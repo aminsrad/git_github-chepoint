@@ -1,10 +1,5 @@
 module.exports = (mongoose) => {
   var schema = mongoose.Schema(
-    // {
-    //   image: String,
-    //   title: String,
-    //   description: String,
-    // },
     {
       title: String,
       image: {
