@@ -1,0 +1,13 @@
+export const GET_USER = "GET_USER";
+export const GET_ACTUALITE = "GET_ACTUALITE";
+export const GET_CONTACTUS = "GET_CONTACTUS";
+export const GET_PRODUCT = "GET_PRODUCT";
+export const CREATE_ACTUALITE = "CREATE_ACTUALITE";
+export const CREATE_CONTACTUS = "CREATE_CONTACTUS";
+export const UPDATE_ACTUALITE = "UPDATE_ACTUALITE";
+export const UPDATE_USER = "UPDATE_USER";
+export const DELETE_ACTUALITE = "DELETE_ACTUALITE";
+export const CREATE_PRODUCT = "CREATE_PRODUCT";
+export const CREATE_USER = "CREATE_USER";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGOUT = "LOGOUT";
