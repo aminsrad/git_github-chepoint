@@ -51,4 +51,3 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, { login })(LoginPage);
-// export default connect(null, { login })(LoginPage);

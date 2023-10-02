@@ -24,32 +24,6 @@ const ActualiteCard = (el) => {
   }, [el.image]);
 
   return (
-    // <div>
-    //   <div style={{ marginTop: 30, marginLeft: 60 }} sx={{ maxWidth: 345 }}>
-    //     <Card>
-    //       <Box>
-    //         <CardContent>
-    //           <Typography component="div" variant="h5">
-    //             <p>{el.title}</p>
-    //           </Typography>
-    //           <Typography
-    //             variant="subtitle1"
-    //             color="text.secondary"
-    //             component="div"
-    //           ></Typography>
-    //         </CardContent>
-    //       </Box>
-    //       <CardMedia
-    //         component="img"
-    //         height="140"
-    //         style={{ maxWidth: 345 }}
-    //         alt="sacem"
-    //         src={imgfolder + dataUrl}
-    //       />
-    //       <CardMedia />
-    //     </Card>
-    //   </div>
-    // </div>
     <Card
       style={{
         width: "320px",

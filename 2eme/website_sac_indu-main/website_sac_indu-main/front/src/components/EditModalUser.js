@@ -30,9 +30,6 @@ const EditModalUser = ({ el }) => {
   const update = (e) => {
     e.preventDefault();
     const newpass = { password };
-    const formData = new FormData();
-    formData.append("password", password);
-    console.log(formData);
 
     dispatch(updateUser(el._id, newpass));
     clearForm();
